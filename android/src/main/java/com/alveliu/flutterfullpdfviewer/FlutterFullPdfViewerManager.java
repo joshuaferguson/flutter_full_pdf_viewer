@@ -1,4 +1,4 @@
-package com.alveliu.flutterfullpdfviewer;
+package com.worldview.flutterfullpdfviewer;
 
 import android.app.Activity;
 import android.view.ViewGroup;

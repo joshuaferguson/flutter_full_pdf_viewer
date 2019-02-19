@@ -1,4 +1,4 @@
-package com.alveliu.flutterfullpdfviewer;
+package com.worldview.flutterfullpdfviewer;
 
 import android.app.Activity;
 import android.content.Context;
@@ -33,7 +33,7 @@ public class FlutterFullPdfViewerPlugin implements MethodCallHandler, PluginRegi
      * Plugin registration.
      */
     public static void registerWith(Registrar registrar) {
-        channel = new MethodChannel(registrar.messenger(), "flutter_full_pdf_viewer");
+        channel = new MethodChannel(registrar.messenger(), "flutter_pdf_wv");
         final FlutterFullPdfViewerPlugin instance = new FlutterFullPdfViewerPlugin(registrar.activity());
         registrar.addActivityResultListener(instance);
         channel.setMethodCallHandler(instance);

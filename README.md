@@ -1,4 +1,4 @@
-# flutter_full_pdf_viewer -> The pdf viewer for flutter
+# flutter_pdf_wv -> The pdf viewer for flutter
 
 Android and iOS working pdf viewer!
 
@@ -10,7 +10,7 @@ Add this to your package's pubspec.yaml file:
 
 ```
 dependencies:
-  flutter_full_pdf_viewer: ^1.0.2
+  flutter_pdf_wv: ^1.0.2
 ```
 
 
@@ -32,9 +32,9 @@ Alternatively, your editor might support pub get or ```flutter packages get```. 
 Now in your Dart code, you can use:
 
 ```
-import 'package:flutter_full_pdf_viewer/flutter_full_pdf_viewer.dart';
-import 'package:flutter_full_pdf_viewer/full_pdf_viewer_plugin.dart';
-import 'package:flutter_full_pdf_viewer/full_pdf_viewer_scaffold.dart';
+import 'package:flutter_pdf_wv/flutter_full_pdf_viewer.dart';
+import 'package:flutter_pdf_wv/full_pdf_viewer_plugin.dart';
+import 'package:flutter_pdf_wv/full_pdf_viewer_scaffold.dart';
 ```
 
 ### 4. Informations for Release on Android

@@ -1,4 +1,4 @@
-name: flutter_full_pdf_viewer_example
+name: flutter_pdf_wv_example
 description: Demonstrates how to use the flutter_full_pdf_viewer plugin.
 
 # The following defines the version and build number for your application.
@@ -29,7 +29,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_full_pdf_viewer:
+  flutter_pdf_wv:
     path: ../
 
 # For information on the generic Dart part of this file, see the

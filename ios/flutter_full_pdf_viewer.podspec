@@ -2,7 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_full_pdf_viewer'
+  s.name             = 'flutter_pdf_wv'
   s.version          = '1.0.1'
   s.summary          = 'A fully functional on both platforms pdf viewer.'
   s.description      = <<-DESC

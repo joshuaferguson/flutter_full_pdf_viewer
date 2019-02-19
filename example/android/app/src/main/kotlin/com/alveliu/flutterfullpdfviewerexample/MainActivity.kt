@@ -1,4 +1,4 @@
-package com.alveliu.flutterfullpdfviewerexample
+package com.worldview.flutterfullpdfviewerexample
 
 import android.os.Bundle
 

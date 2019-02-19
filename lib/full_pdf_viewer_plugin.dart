@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 enum PDFViewState { shouldStart, startLoad, finishLoad }
 
 class PDFViewerPlugin {
-  final _channel = const MethodChannel("flutter_full_pdf_viewer");
+  final _channel = const MethodChannel("flutter_pdf_wv");
   static PDFViewerPlugin _instance;
 
   factory PDFViewerPlugin() => _instance ??= new PDFViewerPlugin._();
@@ -28,12 +28,7 @@ class PDFViewerPlugin {
   Future<Null> launch(String path, {Rect rect}) async {
     final args = <String, dynamic>{'path': path};
     if (rect != null) {
-      args['rect'] = {
-        'left': rect.left,
-        'top': rect.top,
-        'width': rect.width,
-        'height': rect.height
-      };
+      args['rect'] = {'left': rect.left, 'top': rect.top, 'width': rect.width, 'height': rect.height};
     }
     await _channel.invokeMethod('launch', args);
   }
@@ -44,13 +39,11 @@ class PDFViewerPlugin {
 
   /// adds the plugin as ActivityResultListener
   /// Only needed and used on Android
-  Future registerAcitivityResultListener() =>
-      _channel.invokeMethod('registerAcitivityResultListener');
+  Future registerActivityResultListener() => _channel.invokeMethod('registerActivityResultListener');
 
   /// removes the plugin as ActivityResultListener
   /// Only needed and used on Android
-  Future removeAcitivityResultListener() =>
-      _channel.invokeMethod('removeAcitivityResultListener');
+  Future removeActivityResultListener() => _channel.invokeMethod('removeActivityResultListener');
 
   /// Close all Streams
   void dispose() {
@@ -61,12 +54,7 @@ class PDFViewerPlugin {
   /// resize PDFViewer
   Future<Null> resize(Rect rect) async {
     final args = {};
-    args['rect'] = {
-      'left': rect.left,
-      'top': rect.top,
-      'width': rect.width,
-      'height': rect.height
-    };
+    args['rect'] = {'left': rect.left, 'top': rect.top, 'width': rect.width, 'height': rect.height};
     await _channel.invokeMethod('resize', args);
   }
 }

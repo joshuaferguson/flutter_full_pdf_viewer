@@ -1,4 +1,4 @@
-group 'com.alveliu.flutterfullpdfviewer'
+group 'com.worldview.flutterfullpdfviewer'
 version '1.0.0'
 
 buildscript {
